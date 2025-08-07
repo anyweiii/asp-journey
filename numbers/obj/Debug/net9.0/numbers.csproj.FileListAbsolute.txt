@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\bin\Debug\net9.0\numbers.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\bin\Debug\net9.0\numbers.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\bin\Debug\net9.0\numbers.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\bin\Debug\net9.0\numbers.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\bin\Debug\net9.0\numbers.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\refint\numbers.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\numbers.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\numbers\obj\Debug\net9.0\ref\numbers.dll
