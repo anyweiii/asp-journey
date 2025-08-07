@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\bin\Debug\net9.0\tuples-and-types.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\bin\Debug\net9.0\tuples-and-types.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\bin\Debug\net9.0\tuples-and-types.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\bin\Debug\net9.0\tuples-and-types.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\bin\Debug\net9.0\tuples-and-types.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\refint\tuples-and-types.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\tuples-and-types.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\tuples-and-types\obj\Debug\net9.0\ref\tuples-and-types.dll
