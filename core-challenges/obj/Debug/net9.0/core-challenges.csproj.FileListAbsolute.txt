@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\bin\Debug\net9.0\core-challenges.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\bin\Debug\net9.0\core-challenges.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\bin\Debug\net9.0\core-challenges.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\bin\Debug\net9.0\core-challenges.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\bin\Debug\net9.0\core-challenges.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\refint\core-challenges.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\core-challenges.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\core-challenges\obj\Debug\net9.0\ref\core-challenges.dll
