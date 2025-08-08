@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\bin\Debug\net9.0\pattern-matching.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\bin\Debug\net9.0\pattern-matching.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\bin\Debug\net9.0\pattern-matching.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\bin\Debug\net9.0\pattern-matching.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\bin\Debug\net9.0\pattern-matching.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\refint\pattern-matching.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\pattern-matching.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\pattern-matching\obj\Debug\net9.0\ref\pattern-matching.dll
