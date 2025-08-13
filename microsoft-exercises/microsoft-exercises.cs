@@ -123,9 +123,9 @@ Console.WriteLine(@"c:\invoices\app.exe -j");
 // string message = greeting + " " + firstName + "!";
 // Console.WriteLine(message);
 
-string firstName = "Bob";
-string greeting = "Hello";
-Console.WriteLine(greeting + " " + firstName + "!");
+// string firstName = "Bob";
+// string greeting = "Hello";
+// Console.WriteLine(greeting + " " + firstName + "!");
 
 // string message = greeting + " " + firstName + "!";
 // string message = $"{greeting} {firstName}";
@@ -150,4 +150,97 @@ Console.WriteLine($@"View English Output:
             c:\Exercise\{projectName}\data.txt");
 
 Console.WriteLine($@"{russianMessage}:
-            c:\Exercise\{projectName}\ru-RU\data.txt");      
+            c:\Exercise\{projectName}\ru-RU\data.txt");
+
+
+/*  
+    Perform Basic Operations on Numbers in C#
+*/
+
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber);
+
+string firstName = "Bob";
+int widgetSold = 7;
+Console.WriteLine(firstName + " sold " + widgetSold + " widgets.");
+Console.WriteLine(firstName + " sold " + (widgetSold + 7) + " widgets.");
+
+/*  
+    Perform Basic Math Operations
+*/
+
+// int sum = 7 + 5;
+// int difference = 7 - 5;
+// int product = 7 * 5;
+// int quotient = 7 / 5;
+
+// Console.WriteLine("Sum: " + sum);
+// Console.WriteLine("Difference: " + difference);
+// Console.WriteLine("Product: " + product);
+// Console.WriteLine("Quotient: " + quotient);
+
+decimal decimalQuotient = 7.0m / 5;
+decimalQuotient = 7.0m / 5.0m; 
+Console.WriteLine($"Decimal Quotient: {decimalQuotient}");
+
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+
+int value1 = 3 + 4 * 5;
+int value2 = (3 + 4) * 5;
+Console.WriteLine(value1);
+Console.WriteLine(value2);
+
+/*  
+    Increment and Decrement Values
+*/
+
+// int value = 1;
+
+// value = value + 1;
+// Console.WriteLine("First increment: " + value);
+
+// value += 1;
+// Console.WriteLine("Second increment: " + value);
+
+// value++;
+// Console.WriteLine("Third Increment: " + value);
+
+// value = value - 1;
+// Console.WriteLine("First decrement: " + value);
+
+// value -= 1;
+// Console.WriteLine("Second decrement: " + value);
+
+// value--;
+// Console.WriteLine("Third decrement: " + value);
+
+/*  
+    Position the increment and decrement operators
+*/
+
+int value = 1;
+value++;
+
+Console.WriteLine("First: " + value);
+Console.WriteLine($"Second: {value++}");
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+
+/*  
+    Challenge: Fahrenheit to Celsius
+*/
+
+// parenthesis, exponent, multiplication, division, addition, subtraction
+int fahrenheit = 94;
+decimal conversion = (fahrenheit - 32m) * 5m / 9m;
+Console.WriteLine($"The temperature is {conversion} Celsius");
+
+Console.WriteLine("Windows " + 7 + 4);
+Console.WriteLine(5 / 10);
