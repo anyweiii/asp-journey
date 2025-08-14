@@ -244,3 +244,61 @@ Console.WriteLine($"The temperature is {conversion} Celsius");
 
 Console.WriteLine("Windows " + 7 + 4);
 Console.WriteLine(5 / 10);
+
+/*  
+    Preparation for Guided Projects
+*/
+
+int currentAssignments = 5;
+
+int sophia1 = 93;
+int sophia2 = 87;
+int sophia3 = 98;
+int sophia4 = 95;
+int sophia5 = 100;
+
+int nicolas1 = 80;
+int nicolas2 = 83;
+int nicolas3 = 82;
+int nicolas4 = 88;
+int nicolas5 = 85;
+
+int zahira1 = 84;
+int zahira2 = 96;
+int zahira3 = 73;
+int zahira4 = 85;
+int zahira5 = 79;
+
+int jeong1 = 90;
+int jeong2 = 92;
+int jeong3 = 98;
+int jeong4 = 100;
+int jeong5 = 97;
+
+int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
+int zahiraSum = zahira1 + zahira2 + zahira3 + zahira4 + zahira5;
+int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
+
+Console.WriteLine($"Sophia: {sophiaSum}");
+Console.WriteLine($"Nicolas: {nicolasSum}");
+Console.WriteLine($"Zahira: {zahiraSum}");
+Console.WriteLine($"Jeong: {jeongSum}");
+
+decimal sophiaScore = (decimal) sophiaSum / currentAssignments;
+decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
+decimal zahiraScore = (decimal) zahiraSum / currentAssignments;
+decimal jeongScore = (decimal) jeongSum / currentAssignments;
+
+Console.WriteLine($"Sophia: {sophiaScore} A");
+Console.WriteLine($"Nicolas: {nicolasScore} B");
+Console.WriteLine($"Zahira: {zahiraScore} B");
+Console.WriteLine($"Jeong: {jeongScore} A");
+
+Console.WriteLine("Student Grade\n");
+Console.WriteLine("Student\tGrade\n");
+Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
+Console.WriteLine("Nicolas:\t" + nicolasScore + "\tB");
+Console.WriteLine("Zahirah:\t" + zahiraScore + "\tB");
+Console.WriteLine("Jeong:\t\t" + jeongScore + "\tA");
