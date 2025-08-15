@@ -191,3 +191,25 @@ foreach (string order in fraudOrder)
         Console.WriteLine($"These are the Fraud IDs: {order}");
     }
 }
+
+string firstName = "Bob";
+int widgetSold = 7;
+Console.WriteLine($"{firstName} sold {widgetSold} widgets.");
+
+string[] orderIDs = new string[5]; // Creation of Array with max 5 values
+for (int i = 0; i < orderIDs.Length; i++)
+{
+    // Prefix Values are between 65 to 70 in ASCII
+    int prefixValue = random.Next(65, 70);
+    // Conversion of the prefix value to Character and String
+    string prefix = Convert.ToChar(prefixValue).ToString();
+    // Choosing of Random Value then Converting to String
+    string suffix = random.Next(1, 1000).ToString("000");
+    // orderID is the combination of the prefix and suffix
+    orderIDs[i] = prefix + suffix;
+}
+
+foreach (var orderID in orderIDs)
+{
+    Console.WriteLine(orderID);
+}
