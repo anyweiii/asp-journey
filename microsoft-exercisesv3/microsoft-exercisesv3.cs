@@ -64,12 +64,12 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
     Challenge
 */
 
-Random coin = new Random();
-int number = coin.Next(0, 2);
-Console.WriteLine($"Coin: {(number == 0 ? "heads" : "tail")}");
+// Random coin = new Random();
+// int number = coin.Next(0, 2);
+// Console.WriteLine($"Coin: {(number == 0 ? "heads" : "tail")}");
 
-string permission = "Admin|Manager";
-int level = 21;
+// string permission = "Admin|Manager";
+// int level = 21;
 
 // if (permission.Contains("Admin") && level > 55)
 // {
@@ -92,29 +92,168 @@ int level = 21;
 //     Console.WriteLine($"You do not have sufficient privileges");
 // }
 
-if (permission.Contains("Admin"))
-{
-    if (level > 55)
+// if (permission.Contains("Admin"))
+// {
+//     if (level > 55)
+//     {
+//         Console.WriteLine($"Welcome, Super Admin user.");
+//     }
+//     else if (level <= 55)
+//     {
+//         Console.WriteLine($"Welcome, Admin user.");
+//     }
+// }
+// else if (permission.Contains("Manager"))
+// {
+//     if (level > 20)
+//     {
+//         Console.WriteLine($"Contact Admin for access.");
+//     }
+//     else if (level < 20)
+//     {
+//         Console.WriteLine($"You do not have sufficient privileges");
+//     }
+// }
+// else
+// {
+//     Console.WriteLine($"You do not have sufficient privileges");
+// }
+
+/*  
+    Control Variable Score and Logic using Code Blocks in C#
+        - Usually defined in a squiggly braces {}
+*/
+
+/* 
+    bool flag = true;
+    int value;
+
+    if (flag)
     {
-        Console.WriteLine($"Welcome, Super Admin user.");
+        value = 10;
+        Console.WriteLine($"Inside the code block: {value}");
     }
-    else if (level <= 55)
-    {
-        Console.WriteLine($"Welcome, Admin user.");
-    }
-}
-else if (permission.Contains("Manager"))
-{
-    if (level > 20)
-    {
-        Console.WriteLine($"Contact Admin for access.");
-    }
-    else if (level < 20)
-    {
-        Console.WriteLine($"You do not have sufficient privileges");
-    }
-}
+    // This code is an error because the variable is defined inside the code block and not universally defined. 
+    // Console.WriteLine($"Outside the code block: {value}");
+
+    value = 0;
+    Console.WriteLine($"Outside the code block: {value}"); 
+*/
+
+bool flag = true;
+if (flag) 
+    Console.WriteLine(flag);
+
+string name = "steve";
+if (name == "bob")
+    Console.WriteLine("Found Bob!");
+else if (name == "steve")
+    Console.WriteLine("Found Steve");
 else
+    Console.WriteLine("Found Chuck!");
+
+/*  
+    Update Problematic Code
+*/
+
+int[] numbers = [4, 8, 15, 16, 23, 42];
+
+foreach (int number in numbers)
 {
-    Console.WriteLine($"You do not have sufficient privileges");
+    int total = 0;
+    // addition of the total to the numbers array. Adding of each number adding to themselves.
+    total += number;
+
+    if (number == 42)
+    {
+        Console.WriteLine("The set contains 42");
+    }
+
+    Console.WriteLine($"Total: {total}");
 }
+
+/*  
+    Implement a switch statement
+*/
+
+int employeeLevel = 100;
+string employeeName = "John Smith";
+
+string title = "";
+
+switch (employeeLevel)
+{
+    case 100:
+    case 200:
+        title = "Senior Associate";
+        break;
+    case 300:
+        title = "Manager";
+        break;
+    case 400:
+        title = "Senior Manager";
+        break;
+    default:
+        title = "Associate";
+        break;
+}
+
+Console.WriteLine($"{employeeName}, {title}");
+
+// SKU = Stock Keeping Unit
+// SKU value format: <product #>-<2 letter color code>-<size code>
+string sku = "01-MN-L";
+
+string[] product = sku.Split('-'); // items are split via '-'
+
+string type = "";
+string color = "";
+string size = "";
+
+switch (product[0])
+{
+    case "01":
+        type = "Sweat Shirt";
+        break;
+    case "02":
+        type = "T-Shirt";
+        break;
+    case "03":
+        type = "Sweat Pants";
+        break;
+    default:
+        type = "Other";
+        break;
+}
+
+switch (product[1])
+{
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    default:
+        color = "Other";
+        break;
+}
+
+
+switch (product[2])
+{
+    case "S":
+        size = "Small";
+        break;
+    case "M":
+        size = "Medium";
+        break;
+    case "L":
+        size = "Large";
+        break;
+    default:
+        size = "One Size Fits All";
+        break;
+}
+
+Console.WriteLine($"Product: {size} {color} {type}");
