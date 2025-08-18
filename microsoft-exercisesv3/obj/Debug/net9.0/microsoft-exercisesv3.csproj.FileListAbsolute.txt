@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\bin\Debug\net9.0\microsoft-exercisesv3.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\bin\Debug\net9.0\microsoft-exercisesv3.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\bin\Debug\net9.0\microsoft-exercisesv3.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\bin\Debug\net9.0\microsoft-exercisesv3.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\bin\Debug\net9.0\microsoft-exercisesv3.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\refint\microsoft-exercisesv3.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\microsoft-exercisesv3.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\microsoft-exercisesv3\obj\Debug\net9.0\ref\microsoft-exercisesv3.dll
