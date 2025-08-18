@@ -67,3 +67,54 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
 Random coin = new Random();
 int number = coin.Next(0, 2);
 Console.WriteLine($"Coin: {(number == 0 ? "heads" : "tail")}");
+
+string permission = "Admin|Manager";
+int level = 21;
+
+// if (permission.Contains("Admin") && level > 55)
+// {
+//     Console.WriteLine($"Welcome, Super Admin user.");
+// }
+// else if (permission.Contains("Admin") && level <= 55)
+// {
+//     Console.WriteLine($"Welcome, Admin user.");
+// }
+// else if (permission.Contains("Manager") && level > 20)
+// {
+//     Console.WriteLine($"Contact Admin for access.");
+// }
+// else if (permission.Contains("Manager") && level < 20)
+// {
+//     Console.WriteLine($"You do not have sufficient privileges");
+// }
+// else
+// {
+//     Console.WriteLine($"You do not have sufficient privileges");
+// }
+
+if (permission.Contains("Admin"))
+{
+    if (level > 55)
+    {
+        Console.WriteLine($"Welcome, Super Admin user.");
+    }
+    else if (level <= 55)
+    {
+        Console.WriteLine($"Welcome, Admin user.");
+    }
+}
+else if (permission.Contains("Manager"))
+{
+    if (level > 20)
+    {
+        Console.WriteLine($"Contact Admin for access.");
+    }
+    else if (level < 20)
+    {
+        Console.WriteLine($"You do not have sufficient privileges");
+    }
+}
+else
+{
+    Console.WriteLine($"You do not have sufficient privileges");
+}
