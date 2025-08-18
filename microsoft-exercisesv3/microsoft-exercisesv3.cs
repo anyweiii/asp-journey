@@ -140,17 +140,17 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
     Console.WriteLine($"Outside the code block: {value}"); 
 */
 
-bool flag = true;
-if (flag) 
-    Console.WriteLine(flag);
+// bool flag = true;
+// if (flag) 
+//     Console.WriteLine(flag);
 
-string name = "steve";
-if (name == "bob")
-    Console.WriteLine("Found Bob!");
-else if (name == "steve")
-    Console.WriteLine("Found Steve");
-else
-    Console.WriteLine("Found Chuck!");
+// string name = "steve";
+// if (name == "bob")
+//     Console.WriteLine("Found Bob!");
+// else if (name == "steve")
+//     Console.WriteLine("Found Steve");
+// else
+//     Console.WriteLine("Found Chuck!");
 
 /*  
     Update Problematic Code
@@ -257,3 +257,68 @@ switch (product[2])
 }
 
 Console.WriteLine($"Product: {size} {color} {type}");
+
+/*  
+    Create and Configure Iteration Loops
+        foreach - iterates through a codeblock once for each item
+        while - iterates until condition is met
+*/
+
+/* 
+for (int i = 10; i >= 0; i--)
+{
+    // starts with 10 then checks if >= 0 then proceeds with the codeblock statement (printing) then decrement
+    Console.WriteLine(i);
+} 
+*/
+
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.WriteLine(i);
+//     if (i == 7) break;
+// }
+
+// string[] names = { "Alex", "Eddie", "David", "Michael" };
+// for (int i = names.Length - 1; i >= 0; i--)
+// {
+//     Console.WriteLine(names[i]);
+// }
+
+string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+for (int i = 0; i < names.Length; i++)
+{
+    if (names[i] == "David")
+    {
+        names[i] = "Sammy";
+    }
+}
+
+foreach (var name in names)
+{
+    Console.WriteLine(name);
+}
+
+/*  
+    Activity
+*/
+
+for (int x = 1; x <= 100; x++)
+{
+    if ((x % 3 == 0) && (x % 5 == 0))
+    {
+        Console.WriteLine($"{x} - FizzBuzz");
+    }
+    else if (x % 3 == 0)
+    {
+        Console.WriteLine($"{x} - Fizz");
+    }
+    else if (x % 5 == 0)
+    {
+        Console.WriteLine($"{x} - Buzz");
+    }
+    else
+    {
+        Console.WriteLine($"{x}");
+    }
+}
