@@ -156,21 +156,21 @@ Console.WriteLine($"Discount: {(saleAmount > 1000 ? 100 : 50)}");
     Update Problematic Code
 */
 
-int[] numbers = [4, 8, 15, 16, 23, 42];
+// int[] numbers = [4, 8, 15, 16, 23, 42];
 
-foreach (int number in numbers)
-{
-    int total = 0;
-    // addition of the total to the numbers array. Adding of each number adding to themselves.
-    total += number;
+// foreach (int number in numbers)
+// {
+//     int total = 0;
+//     // addition of the total to the numbers array. Adding of each number adding to themselves.
+//     total += number;
 
-    if (number == 42)
-    {
-        Console.WriteLine("The set contains 42");
-    }
+//     if (number == 42)
+//     {
+//         Console.WriteLine("The set contains 42");
+//     }
 
-    Console.WriteLine($"Total: {total}");
-}
+//     Console.WriteLine($"Total: {total}");
+// }
 
 /*  
     Implement a switch statement
@@ -322,3 +322,121 @@ for (int x = 1; x <= 100; x++)
         Console.WriteLine($"{x}");
     }
 }
+
+/*  
+    Do - While
+*/
+
+Random random = new Random();
+int current = random.Next(1, 11);
+
+do
+{
+    // min to less max 
+    current = random.Next(1, 11);
+
+    if (current >= 8) continue;
+
+    Console.WriteLine(current);
+
+} while (current != 7);
+
+// while (current >= 3)
+// {
+//     Console.WriteLine(current);
+//     current = random.Next(1, 11);
+// }
+// Console.WriteLine($"Last number: {current}");
+
+/*  
+    Challenge
+*/
+
+int monster = 10;
+int hero = 10;
+Random dice = new Random();
+
+do
+{
+    int roll = dice.Next(1, 11);
+    monster -= roll;
+    Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health");
+
+    if (monster <= 0) continue;
+
+    roll = dice.Next(1, 11);
+    hero -= roll;
+    Console.WriteLine($"Hero was damages and lost {roll} health and now has {hero} health.");
+} while (hero > 0 && monster > 0);
+
+Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins");
+
+/*  
+    Differentiating Statements
+*/
+
+// string? readResult;
+// bool validEntry = false;
+// Console.WriteLine("Enter a string containing at least three characters:");
+
+// do
+// {
+//     readResult = Console.ReadLine();
+//     if (readResult != null)
+//     {
+//         if (readResult.Length >= 3)
+//         {
+//             validEntry = true;
+//         }
+//         else
+//         {
+//             Console.WriteLine($"Your input is invalid, please try again.");
+//         }
+//     }
+// } while (validEntry == false);
+
+// int numericValue = 0;
+// bool validNumber = false;
+
+// validNumber = int.TryParse(readResult, out numericValue);
+
+// Console.WriteLine(validNumber);
+
+/*  
+    Write a code that validates integer input
+*/
+
+string? readResult;
+string valueEntered = "";
+int numValue = 0;
+bool validNumber = false;
+
+Console.WriteLine("Enter an integer value between 5 and 10");
+
+do
+{
+    readResult = Console.ReadLine();
+    if (readResult != null)
+    {
+        valueEntered = readResult;
+    }
+
+    validNumber = int.TryParse(valueEntered, out numValue);
+
+    if (validNumber == true)
+    {
+        if (numValue <= 5 || numValue >= 10)
+        {
+            validNumber = false;
+            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+    }
+} while (validNumber == false);
+
+Console.WriteLine($"Your input value ({numValue}) has been accepted");
+
+readResult = Console.ReadLine();
