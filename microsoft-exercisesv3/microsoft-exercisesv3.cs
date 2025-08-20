@@ -2,6 +2,8 @@
     Evaluate an expression
 */
 
+using System.Runtime.CompilerServices;
+
 Console.WriteLine("a" == "a ");
 Console.WriteLine("a" == "A");
 Console.WriteLine(1 == 2);
@@ -406,37 +408,73 @@ Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins");
     Write a code that validates integer input
 */
 
-string? readResult;
-string valueEntered = "";
-int numValue = 0;
-bool validNumber = false;
+// string? readResult;
+// string valueEntered = "";
+// int numValue = 0;
+// bool validNumber = false;
 
-Console.WriteLine("Enter an integer value between 5 and 10");
+// Console.WriteLine("Enter an integer value between 5 and 10");
+
+// do
+// {
+//     readResult = Console.ReadLine();
+//     if (readResult != null)
+//     {
+//         valueEntered = readResult;
+//     }
+
+//     validNumber = int.TryParse(valueEntered, out numValue);
+
+//     if (validNumber == true)
+//     {
+//         if (numValue <= 5 || numValue >= 10)
+//         {
+//             validNumber = false;
+//             Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("Sorry, you entered an invalid number, please try again");
+//     }
+// } while (validNumber == false);
+
+// Console.WriteLine($"Your input value ({numValue}) has been accepted");
+
+// readResult = Console.ReadLine();
+
+/*  
+    Write a code that validates input string
+*/
+
+string? readResult;
+string roleEntered = "";
+bool validRole = false;
 
 do
 {
+    Console.WriteLine("Enter your role name (Administrator, Manager or User)");
     readResult = Console.ReadLine();
+
+    // there's an input value
     if (readResult != null)
     {
-        valueEntered = readResult;
+        //Admin_ _ - removes whitespaces
+        roleEntered = readResult.Trim();
     }
 
-    validNumber = int.TryParse(valueEntered, out numValue);
-
-    if (validNumber == true)
+    // if the role is valid
+    // Administrator == administator
+    if ((roleEntered.ToLower() == "administrator") || (roleEntered.ToLower() == "manager") || (roleEntered.ToLower() == "user"))
     {
-        if (numValue <= 5 || numValue >= 10)
-        {
-            validNumber = false;
-            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10");
-        }
+        validRole = true;
     }
     else
     {
-        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+        Console.WriteLine($"The role name that you entered \"{roleEntered}\" is not valid. Enter your role name (Administrator, Manager, or User)");
     }
-} while (validNumber == false);
 
-Console.WriteLine($"Your input value ({numValue}) has been accepted");
+} while (validRole == false);
 
+Console.WriteLine($"Your input value ({roleEntered}) has been accepted");
 readResult = Console.ReadLine();
