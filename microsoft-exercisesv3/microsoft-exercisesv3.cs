@@ -447,34 +447,70 @@ Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins");
     Write a code that validates input string
 */
 
-string? readResult;
-string roleEntered = "";
-bool validRole = false;
+// string? readResult;
+// string roleEntered = "";
+// bool validRole = false;
 
-do
+// do
+// {
+//     Console.WriteLine("Enter your role name (Administrator, Manager or User)");
+//     readResult = Console.ReadLine();
+
+//     // there's an input value
+//     if (readResult != null)
+//     {
+//         //Admin_ _ - removes whitespaces
+//         roleEntered = readResult.Trim();
+//     }
+
+//     // if the role is valid
+//     // Administrator == administator
+//     if ((roleEntered.ToLower() == "administrator") || (roleEntered.ToLower() == "manager") || (roleEntered.ToLower() == "user"))
+//     {
+//         validRole = true;
+//     }
+//     else
+//     {
+//         Console.WriteLine($"The role name that you entered \"{roleEntered}\" is not valid. Enter your role name (Administrator, Manager, or User)");
+//     }
+
+// } while (validRole == false);
+
+// Console.WriteLine($"Your input value ({roleEntered}) has been accepted");
+// readResult = Console.ReadLine();
+
+/*  
+    Processes contents of a string array
+*/
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+int stringsCount = myStrings.Length;
+
+string myString = "";
+int periodLocation = 0;
+
+// stringsCount = 2;
+for (int i = 0; i < stringsCount; i++)
 {
-    Console.WriteLine("Enter your role name (Administrator, Manager or User)");
-    readResult = Console.ReadLine();
+    myString = myStrings[i];
 
-    // there's an input value
-    if (readResult != null)
+    // finds the position of the item
+    periodLocation = myString.IndexOf(".");
+
+    string mySentence;
+
+    while (periodLocation != -1)
     {
-        //Admin_ _ - removes whitespaces
-        roleEntered = readResult.Trim();
+        // I like pizza
+        mySentence = myString.Remove(periodLocation);
+        // I like roast chicken
+        myString = myString.Substring(periodLocation + 1);
+        //I like roast chicken
+        myString = myString.TrimStart();
+        periodLocation = myString.IndexOf(".");
+        Console.WriteLine(mySentence);
     }
 
-    // if the role is valid
-    // Administrator == administator
-    if ((roleEntered.ToLower() == "administrator") || (roleEntered.ToLower() == "manager") || (roleEntered.ToLower() == "user"))
-    {
-        validRole = true;
-    }
-    else
-    {
-        Console.WriteLine($"The role name that you entered \"{roleEntered}\" is not valid. Enter your role name (Administrator, Manager, or User)");
-    }
-
-} while (validRole == false);
-
-Console.WriteLine($"Your input value ({roleEntered}) has been accepted");
-readResult = Console.ReadLine();
+    mySentence = myString.Trim();
+    Console.WriteLine(mySentence);
+}
