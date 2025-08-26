@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\bin\Debug\net9.0\mexercisesv4.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\bin\Debug\net9.0\mexercisesv4.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\bin\Debug\net9.0\mexercisesv4.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\bin\Debug\net9.0\mexercisesv4.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\bin\Debug\net9.0\mexercisesv4.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\refint\mexercisesv4.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\mexercisesv4.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\mexercisesv4\obj\Debug\net9.0\ref\mexercisesv4.dll
