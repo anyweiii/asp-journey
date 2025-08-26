@@ -1,36 +1,293 @@
-﻿Console.WriteLine("Before calling a method");
-SayHello();
-Console.WriteLine("After calling a method");
+﻿// int[] times = {800, 1200, 1600, 2000};
+// int diff = 0;
 
-void SayHello()
+// Console.WriteLine("Enter current GMT");
+// int currentGMT = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Current Medicine Schedule:");
+// DisplayTimes();
+
+// Console.WriteLine("Enter new GMT");
+// int newGMT = Convert.ToInt32(Console.ReadLine());
+
+// if (Math.Abs(newGMT) > 12 || Math.Abs(currentGMT) > 12)
+// {
+//     Console.WriteLine("Invalid GMT");
+// }
+// else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0) 
+// {
+//     diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
+//     AdjustTimes();
+// } 
+// else 
+// {
+//     diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
+//     AdjustTimes();
+// }
+
+// Console.WriteLine("New Medicine Schedule:");
+// DisplayTimes();
+
+// void DisplayTimes()
+// {
+//     /* Format and display medicine times */
+//     foreach (int val in times)
+//     {
+//         string time = val.ToString();
+//         int len = time.Length;
+
+//         if (len >= 3)
+//         {
+//             time = time.Insert(len - 2, ":");
+//         }
+//         else if (len == 2)
+//         {
+//             time = time.Insert(0, "0:");
+//         }
+//         else
+//         {
+//             time = time.Insert(0, "0:0");
+//         }
+
+//         Console.Write($"{time} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void AdjustTimes()
+// {
+//     /* Adjust the times by adding the difference, keeping the value within 24 hours */
+//     for (int i = 0; i < times.Length; i++)
+//     {
+//         times[i] = ((times[i] + diff)) % 2400;
+//     }
+// }
+
+// IP Addresses 
+/*
+    if ipAddress consists of 4 numbers
+        and
+    if each ipAddress number has no leading zeroes
+        and
+    if each ipAddress number is in range 0 - 255
+        then ipAddress is valid
+    else ipAddress is invalid
+*/
+
+string[] ipv4Input = { "107.31.1.5", "255.0.0.255", "555..0.555", "255...255" };
+string[] address;
+bool validLength = false;
+bool validZeroes = false;
+bool validRange = false;
+
+
+
+foreach (string ip in ipv4Input)
 {
-    Console.WriteLine("Hello World");
+    address = ip.Split(".", StringSplitOptions.RemoveEmptyEntries);
+
+    ValidateLength(); 
+    ValidateZeroes(); 
+    ValidateRange(); 
+    
+    if (validLength && validZeroes && validRange)
+    {
+        Console.WriteLine($"IP is a valid IPv4 address"); 
+    }
+    else
+    {
+        Console.WriteLine($"IP is an invalid IPv4 address");
+    }
 }
 
-int[] a = { 1, 2, 3, 4, 5 };
-Console.WriteLine("Contents of Array:");
-PrintArray();
-
-void PrintArray()
+void ValidateLength()
 {
-    foreach (int x in a)
+    /* 
+        107
+        31
+        1
+        5
+    */
+    validLength = address.Length == 4; 
+};
+
+void ValidateZeroes()
+{
+    foreach (string number in address)
     {
-        Console.Write($"{x} ");
+        if (number.Length > 1 && number.StartsWith("0"))
+        {
+            validZeroes = false;
+            return;
+        }
+    }
+    validZeroes = true;
+};
+
+void ValidateRange()
+{
+    foreach (string number in address)
+    {
+        int value = int.Parse(number);
+        if (value < 0 || value > 255)
+        {
+            validRange = false;
+            return;
+        }
+    }
+    validRange = true;
+};
+
+
+// Generating fortune
+Random random = new Random();
+int luck = random.Next(100);
+
+string[] text = {"You have much to", "Today is a day to", "Whatever work you do", "This is an ideal time to"};
+string[] good = {"look forward to.", "try new things!", "is likely to succeed.", "accomplish your dreams!"};
+string[] bad = {"fear.", "avoid major decisions.", "may have unexpected outcomes.", "re-evaluate your life."};
+string[] neutral = {"appreciate.", "enjoy time with friends.", "should align with your values.", "get in tune with nature."};
+
+TellFortune();
+
+void TellFortune()
+{
+    Console.WriteLine("A fortune teller whispers the following words:");
+    // 100
+    string[] fortune = (luck > 75 ? good : (luck < 25 ? bad : neutral));
+    for (int i = 0; i < 4; i++) 
+    {
+        Console.Write($"{text[i]} {fortune[i]} ");
+    }
+};
+
+// Parameter method
+
+string[] students = {"Jenna", "Ayesha", "Carlos", "Viktor"};
+
+DisplayStudents(students);
+DisplayStudents(new string[] {"Robert","Vanya"});
+
+void DisplayStudents(string[] students)
+{
+    foreach (string student in students)
+    {
+        Console.Write($"{student}, ");
     }
     Console.WriteLine();
 }
 
-// Create a method to display a random number
-void DisplayRandomNumbers()
-{
-    Random random = new Random();
+int[] array = {1, 2, 3, 4, 5};
 
-    for (int i = 0; i < 5; i++)
+PrintArray(array);
+Clear(array);
+PrintArray(array);
+
+void PrintArray(int[] array) 
+{
+    foreach (int a in array) 
     {
-        Console.Write($"{random.Next(1, 100)} ");
+        Console.Write($"{a} ");
     }
     Console.WriteLine();
 }
 
-Console.WriteLine("Generating random numbers:");
-DisplayRandomNumbers();
+void Clear(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = 0;
+    }
+}
+
+string status = "Healthy";
+
+Console.WriteLine($"Start: {status}"); // Healthy
+SetHealth(false); 
+Console.WriteLine($"End: {status}"); // Healthy
+
+void SetHealth(bool isHealthy) // false 
+{
+    status = (isHealthy ? "Healthy" : "Unhealthy");
+    Console.WriteLine($"Middle: {status}"); // Unhealthy
+}
+
+// RSVP application
+string[] guestList = {"Rebecca", "Nadia", "Noor", "Jonte"};
+string[] rsvps = new string[10]; // can hold 10 items
+int count = 0;
+
+RSVP("Rebecca", 1, "none", true);
+RSVP("Nadia", 2, "Nuts", true);
+RSVP("Linh", 2, "none", false);
+RSVP("Tony", 1, "Jackfruit", true);
+RSVP("Noor", 4, "none", false);
+RSVP("Jonte", 2, "Stone fruit", false);
+ShowRSVPs();
+
+void RSVP(string name, int partySize = 1, string allergies = "none", bool inviteOnly = true)
+{
+    if (inviteOnly)
+    {
+        bool found = false;
+        foreach (string guest in guestList)
+        {
+            if (guest.Equals(name)) {
+                found = true;
+                break;
+            }
+        }
+        if (!found)
+        {
+            Console.WriteLine($"Sorry, {name} is not on the guest list");
+            return;
+        }
+    }
+
+    rsvps[count] = $"Name: {name}, \tParty Size: {partySize}, \tAllergies: {allergies}";
+    count++;
+}
+
+void ShowRSVPs()
+{
+    Console.WriteLine("\nTotal RSVPs:");
+    for (int i = 0; i < count; i++)
+    {
+        Console.WriteLine(rsvps[i]);
+    }
+}
+
+// Challenge
+string[,] corporate = 
+{
+    {"Robert", "Bavin"}, {"Simon", "Bright"},
+    {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
+    {"Sarah", "Delucchi"}, {"Sinan", "Ali"}};
+
+string[,] external = 
+{
+    {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
+    {"Shay", "Lawrence"}, {"Daren", "Valdes"}
+};
+
+string externalDomain = "hayworth.com";
+
+for (int i = 0; i < corporate.GetLength(0); i++) 
+{
+    // {0, 1}
+    DisplayEmail(first: corporate[i,0], last: corporate[i,1]);
+}
+
+for (int i = 0; i < external.GetLength(0); i++) 
+{
+    DisplayEmail(first: external[i,0], last: external[i,1], domain: externalDomain);
+}
+
+void DisplayEmail(string first, string last, string domain = "contoso.com") 
+{
+    // takes first letter to second letter
+    // robavin
+    string email = first.Substring(0, 2) + last;
+    email = email.ToLower();
+    Console.WriteLine($"{email}@{domain}");
+}
