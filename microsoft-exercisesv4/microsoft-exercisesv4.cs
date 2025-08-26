@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
 Console.WriteLine("Discover Integral Type");
 
@@ -25,27 +26,27 @@ Console.WriteLine($"double  : {double.MinValue} to {double.MaxValue} (with ~15-1
 Console.WriteLine($"decimal : {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 
 // Reference Types
-int[] data = new int[3];
+// int[] data = new int[3];
 
-string shortenedString = "Hello World";
-Console.WriteLine(shortenedString);
+// string shortenedString = "Hello World";
+// Console.WriteLine(shortenedString);
 
-int val_A = 2;
-int val_B = val_A;
-val_B = 5;
+// int val_A = 2;
+// int val_B = val_A;
+// val_B = 5;
 
-Console.WriteLine("--Value Types--");
-Console.WriteLine($"val_A: {val_A}");
-Console.WriteLine($"val_B: {val_B}");
+// Console.WriteLine("--Value Types--");
+// Console.WriteLine($"val_A: {val_A}");
+// Console.WriteLine($"val_B: {val_B}");
 
-int[] ref_A = new int[1];
-ref_A[0] = 2;
-int[] ref_B = ref_A;
-ref_B[0] = 5;
+// int[] ref_A = new int[1];
+// ref_A[0] = 2;
+// int[] ref_B = ref_A;
+// ref_B[0] = 5;
 
-Console.WriteLine("--Reference Types--");
-Console.WriteLine($"ref_A[0]: {ref_A[0]}");
-Console.WriteLine($"ref_B[0]: {ref_B[0]}");
+// Console.WriteLine("--Reference Types--");
+// Console.WriteLine($"ref_A[0]: {ref_A[0]}");
+// Console.WriteLine($"ref_B[0]: {ref_B[0]}");
 
 // Explore Data Type Casting and Conversion
 
@@ -314,16 +315,16 @@ Console.WriteLine($"     Sub Total: {subtotal:C}");
 Console.WriteLine($"           Tax: {taxPercentage:P2}");
 Console.WriteLine($"     Total Billed: {total:C}");
 
-string first = "Hello";
-string second = "World";
-string result = string.Format("{0} {1}!", first, second);
-Console.WriteLine(result);
-string input = "Pad this";
- Console.WriteLine(input.PadLeft(12));
- Console.WriteLine(input.PadRight(12));
+// string first = "Hello";
+// string second = "World";
+// string result = string.Format("{0} {1}!", first, second);
+// Console.WriteLine(result);
+// string input = "Pad this";
+//  Console.WriteLine(input.PadLeft(12));
+//  Console.WriteLine(input.PadRight(12));
 
- Console.WriteLine(input.PadLeft(12, '-'));
- Console.WriteLine(input.PadRight(12, '-'));
+//  Console.WriteLine(input.PadLeft(12, '-'));
+//  Console.WriteLine(input.PadRight(12, '-'));
 
 //  string paymentId = "769C";
 //  var formattedLine = paymentId.PadRight(6);
@@ -472,12 +473,12 @@ Console.WriteLine(comparisonMessage);
 // openingPosition = message.IndexOfAny(openSymbols, startPosition);
 // Console.WriteLine($"Found WITH using startPosition {startPosition}: {message.Substring(openingPosition)}");
 
-string message = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
+// string message = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
 
 // The IndexOfAny() helper method requires a char array of characters. 
 // You want to look for:
 
-char[] openSymbols = { '[', '{', '(' };
+// char[] openSymbols = { '[', '{', '(' };
 
 // You'll use a slightly different technique for iterating through 
 // the characters in the string. This time, use the closing 
@@ -485,40 +486,65 @@ char[] openSymbols = { '[', '{', '(' };
 //next open symbol. So, you need to initialize the closingPosition 
 // variable to zero:
 
-int closingPosition = 0;
+// int closingPosition = 0;
 
-while (true)
-{
-    int openingPosition = message.IndexOfAny(openSymbols, closingPosition);
+// while (true)
+// {
+//     int openingPosition = message.IndexOfAny(openSymbols, closingPosition);
 
-    if (openingPosition == -1) break;
+//     if (openingPosition == -1) break;
 
-    string currentSymbol = message.Substring(openingPosition, 1);
+//     string currentSymbol = message.Substring(openingPosition, 1);
 
-    // Now  find the matching closing symbol
-    char matchingSymbol = ' ';
+//     // Now  find the matching closing symbol
+//     char matchingSymbol = ' ';
 
-    switch (currentSymbol)
-    {
-        case "[":
-            matchingSymbol = ']';
-            break;
-        case "{":
-            matchingSymbol = '}';
-            break;
-        case "(":
-            matchingSymbol = ')';
-            break;
-    }
+//     switch (currentSymbol)
+//     {
+//         case "[":
+//             matchingSymbol = ']';
+//             break;
+//         case "{":
+//             matchingSymbol = '}';
+//             break;
+//         case "(":
+//             matchingSymbol = ')';
+//             break;
+//     }
 
-    // To find the closingPosition, use an overload of the IndexOf method to specify 
-    // that the search for the matchingSymbol should start at the openingPosition in the string. 
+//     // To find the closingPosition, use an overload of the IndexOf method to specify 
+//     // that the search for the matchingSymbol should start at the openingPosition in the string. 
 
-    openingPosition += 1;
-    closingPosition = message.IndexOf(matchingSymbol, openingPosition);
+//     openingPosition += 1;
+//     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
 
-    // Finally, use the techniques you've already learned to display the sub-string:
+//     // Finally, use the techniques you've already learned to display the sub-string:
 
-    int length = closingPosition - openingPosition;
-    Console.WriteLine(message.Substring(openingPosition, length));
-}
+//     int length = closingPosition - openingPosition;
+//     Console.WriteLine(message.Substring(openingPosition, length));
+// }
+
+// Remove and replace methods
+// Remove Method
+string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 20);
+Console.WriteLine(updatedData);
+
+// Replace Method
+string message = "This--is--ex-amp-le--da-ta";
+message = message.Replace("--", " ");
+message = message.Replace("-", "");
+Console.WriteLine(message);
+
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+
+string quantity = "";
+string output = "";
+
+// Your work here
+quantity = input.Remove(0, 35).Remove(4, 13);
+output = Regex.Replace(input, @"<div>|<\div>$", "").Replace("&trade", "&reg");
+
+
+Console.WriteLine(quantity);
+Console.WriteLine(output);
