@@ -1,0 +1,14 @@
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\bin\Debug\net9.0\w3schools.exe
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\bin\Debug\net9.0\w3schools.deps.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\bin\Debug\net9.0\w3schools.runtimeconfig.json
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\bin\Debug\net9.0\w3schools.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\bin\Debug\net9.0\w3schools.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.AssemblyInfoInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.AssemblyInfo.cs
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.csproj.CoreCompileInputs.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\refint\w3schools.dll
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.pdb
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\w3schools.genruntimeconfig.cache
+C:\Users\hfangeles\Desktop\MY FILES\DEVELOPER\w3schools\obj\Debug\net9.0\ref\w3schools.dll
